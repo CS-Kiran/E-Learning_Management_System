@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chatroom</title>
+  <link rel="stylesheet" href="" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<style>
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body{
+  background:rgb(226,226,226);
+}
+
+a{
+  position: relative;
+  width: 280px;
+  font-size: 16px;
+  font-weight:bold;
+  color: rgb(85, 83, 83);
+  display: table;
+  padding: 10px;
+}
+
+a:hover{
+  background: #eee;
+}
+a:hover i{
+  color: #34AF6D;
+  transition: 0.5s;
+}
+
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main .users{
+  display: flex;
+  width: 100%;
+}
+.users .card{
+  width: 25%;
+  margin: 10px;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+.users .card img{
+  width: 100px;
+  height: 90px;
+  border-radius: 50%;
+}
+.users .card h4{
+  text-transform: uppercase;
+}
+.users .card p{
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.users table{
+  margin:  auto;
+}
+.users .per span{
+  padding: 5px;
+  border-radius: 10px;
+  background: rgb(223, 223, 223);
+}
+.users td{
+  font-size: 14px;
+  padding-right: 15px;
+}
+.users .card button{
+  width: 100%;
+  margin-top: 8px;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.users .card button:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/*Attendance List serction  */
+.attendance{
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.attendance-list{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background: #34AF6D;
+  text-align: left;
+  font-weight: bold;
+}
+.table th,
+.table td{
+  padding: 12px 15px;
+}
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #f3f3f3;
+}
+
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid #4AD489;
+}
+
+.table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.table button:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5rem;
+}
+
+
+</style>
+<body>
+  <div class="container">
+    
+
+    <section class="main">
+      <div class="main-top">
+        <h1>Top Most ChatGroups</h1>
+        </div>
+
+      <div class="users">
+        <div class="card">
+          <img src="file:///C:/xampp/htdocs/chat/ChatDashbd/upsc.jpg">
+          <h4>UPSC</h4>
+          <p>Join group and discuss queries with other aspirants</p>
+          <div class="per">
+            <table>
+              <tr>
+                <td><span>200+</span></td>
+              </tr>
+              <tr>
+                <td>Members</td>
+                
+              </tr>
+            </table>
+          </div>
+          <button>Join</button>
+        </div>
+        <div class="card">
+          <img src="file:///C:/xampp/htdocs/chat/ChatDashbd/NEET.jpg">
+          <h4>NEET UG</h4>
+          <p>Join for getting latest updates regarding neet exam</p>
+          <div class="per">
+            <table>
+              <tr>
+                <td><span>780+</span></td>
+                
+              </tr>
+              <tr>
+                <td>Members</td>
+                
+              </tr>
+            </table>
+          </div>
+          <button>Join</button>
+        </div>
+        <div class="card">
+          <img src="file:///C:/xampp/htdocs/php_programs/IIT%20JEE.jpg">
+          <h4>JEE IIT</h4>
+          <p>asks yours doubts and share your opinions with other JEE aspirants</p>
+          <div class="per">
+            <table>
+              <tr>
+             <td><span>1400+</span></td>
+                
+              </tr>
+              <tr>
+                <td>Members</td>
+                
+              </tr>
+            </table>
+          </div>
+          <button>Join</button>
+        </div>
+        <div class="card">
+          <img src="file:///C:/xampp/htdocs/chat/ChatDashbd/UGC%20NET.jpg">
+          <h4>UGC NET</h4>
+          <p>Join and prepare yourself with other UGC aspirants</p>
+          <div class="per">
+            <table>
+              <tr>
+                <td><span>150+</span></td>
+                
+              </tr>
+              <tr>
+                <td>Members</td>
+                
+              </tr>
+            </table>
+          </div>
+          <button>Join</button>
+        </div>
+      </div>
+      
+      <section class="attendance">
+        <div class="attendance-list">
+          <h1>Your ChatRooms</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Group Name</th>
+                <th>Notification</th>
+                <th>Date Created</th> 
+                <th>Members</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td><a href="NEET.php">NEET</a></td> 
+                <td>10 new mesagges</td>
+                <td>02-10-22</td>                           
+                <td><button>View</button></td>
+              </tr>
+              <tr class="active">
+                <td>02</td>
+                <td><a href="IIT JEE.php">JEE Entrance</a></td>                           <td>5 new mesagges</td>
+                <td>24-09-22</td>
+             <td><button>View</button></td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td><a href="GATE.php">GATE</a></td>
+                <td>14 new mesagges</td>
+                <td>21-09-22</td>
+              <td><button>View</button></td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td><a href="TRECKING.php">Trecking</a></td>
+                <td>4 new mesagges</td>
+               <td>02-08-22</td>
+             <td><button>View</button></td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>
