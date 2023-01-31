@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 100%;
+    height: 40px;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #a81a1a;
+  color: white;
+  border-radius: 5px;
+}
+
+::placeholder{
+  font-size: 15px;
+  color: #646464;
+}
+.round {
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<h1>Basic Information</h1>
+<p style="font-size: 20px;">Course Title</p>
+<input type="text" id="course" name="course" placeholder="Course title here" maxlength="4" size="60" style="height:20pt;width:82%;">
+<br>
+<br>
+<p style="font-size: 20px;">Short Description*</p>
+<input type="text" id="description" placeholder="Item description here" size="50" style="width:82%;height:80pt">
+<br>
+<br>
+<p style="font-size: 20px;">Course Description*</p>
+<input type="text" id="description" placeholder="Insert your course description" size="50" style="width:82%;font-size:16pt;height:80pt">
+<br>
+<br>
+<p style="font-size: 20px;">What will students learn in your course?*</p>
+<input type="text" size="50" style="width:82%;font-size:8pt;height:80pt">
+<p><small>Student will gain this skills, knowledge after completing this course. (One per line).</small></p>
+<br>
+<br>
+<p style="font-size: 20px;">Requirements*</p>
+<input type="text" id="requirements" placeholder="Enter your course requirements" size="50" style="width:82%;font-size:8pt;height:80pt">
+<br>
+<br>
+<p style="font-size: 20px;">Course Level*</p>
+<select name="select level" id="select level" placeholder="Select Level" style="width:82%;font-size:16pt">
+  <option value="select Level">Select Level</option>
+  <option value="beginner">Beginner</option>
+  <option value="intermediate">Intermediate</option>
+  <option value="advance">Advance</option>
+  </select>
+<br>
+<br>
+<p style="font-size: 20px;">Audio Language*</p>
+<select name="select audio" id="select audio" placeholder="Select audio" style="width:82%;font-size:16pt">
+ <option value="select audio">Select audio</option>
+ <option value="english">English</option>
+ <option value="hindi">Hindi</option>
+ <option value="marathi">Marathi</option>
+</select>
+<br>
+<br>
+<p style="font-size: 20px;">Close Caption*</p>
+<select name="select audio" id="select audio" placeholder="close caption" style="width:82%;font-size:16pt">
+<option value="english">English</option>
+<option value="hindi">Hindi</option>
+<option value="marathi">Marathi</option>
+</select>
+<br>
+<br>
+<p style="font-size: 20px;">Course Category*</p>
+<select name="select audio" id="course category" placeholder="course category" style="width:82%;font-size:16pt">
+ <option value="web">Web Development</option>
+ <option value="apps">Mobile apps</option>
+ <option value="science">Data Science</option>
+ <option value="language">Programming Language</option>
+ <option value="game">Game Development</option>
+ <option value="data">Databases</option>
+</select>
+<div>
+	<button class="next">POST</button>
+	</div>
+</body>
+
+</html>
+
+
